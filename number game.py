@@ -1,10 +1,16 @@
-def main():
-    x=10
-    user = input('Please Input Number')
+import random as rand
+
+x = rand.randrange(1,100)
+UserCorrect = False
+
+while(UserCorrect == False):
+    print('Please input a number')
+    user = input()
     user_int = int(user)
 
     if (user_int == x):
         print('Equal!')
+        quit()
 
     if (user_int > x):
         print("Greater Than")
@@ -13,5 +19,5 @@ def main():
         print('Less than')
 
 
-if(__name__== '__main__'):
-    main()
+
+
